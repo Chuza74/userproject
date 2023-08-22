@@ -26,7 +26,7 @@ SECRET_KEY = '+w2t1e^5j(dc$6hp$z8q%j&u@()wo327xxiq@bd%z7*v27_hx%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'axes',
+    #'axes',
 ]
 
 MIDDLEWARE = [
@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'axes.middleware.AxesMiddleware',
+    #'axes.middleware.AxesMiddleware',
 ]
 
 ROOT_URLCONF = 'userproject.urls'
@@ -103,10 +103,10 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-AUTHENTICATION_BACKENDS = [
-   'axes.backends.AxesBackend', # Axes must be first
-   'django.contrib.auth.backends.ModelBackend',
-]
+#AUTHENTICATION_BACKENDS = [
+   #'axes.backends.AxesBackend', # Axes must be first
+   #'django.contrib.auth.backends.ModelBackend',
+#]
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
@@ -132,6 +132,6 @@ STATICFILES_DIRS = [
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
-AXES_COOLOFF_TIME: 2 
-AXES_FAILURE_LIMIT: 6
-AXES_RESET_ON_SUCCESS = True
+#AXES_COOLOFF_TIME: 2 
+#AXES_FAILURE_LIMIT: 6
+#AXES_RESET_ON_SUCCESS = True
