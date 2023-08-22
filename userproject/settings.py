@@ -131,3 +131,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static")
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+
+AXES_COOLOFF_TIME: 2 
+AXES_FAILURE_LIMIT: 6
+AXES_RESET_ON_SUCCESS = True
