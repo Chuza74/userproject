@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 from django. contrib.messages import constants as message
+import psycopg2 as Database
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -85,7 +86,7 @@ WSGI_APPLICATION = 'userproject.wsgi.application'
 # }
 
 DATABASES = {
-'default': {
+ 'default': {
     'ENGINE': 'django.db.backends.postgresql',
     'NAME': 'railway',
     'USER': 'postgres',
